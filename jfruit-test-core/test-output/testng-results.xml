@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Regression" duration-ms="28" started-at="2015-05-19T16:36:28Z" finished-at="2015-05-19T16:36:28Z">
+    <groups>
+    </groups>
+    <test name="RegressionCore" duration-ms="28" started-at="2015-05-19T16:36:28Z" finished-at="2015-05-19T16:36:28Z">
+      <class name="basetest.BaseTestCase">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:basetest.BaseTestCase@1e7deb6]" name="beforeSuite" is-config="true" duration-ms="163" started-at="2015-05-19T17:36:28Z" finished-at="2015-05-19T17:36:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:basetest.BaseTestCase@1e7deb6]" name="afterSuite" is-config="true" duration-ms="3" started-at="2015-05-19T17:36:28Z" finished-at="2015-05-19T17:36:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- basetest.BaseTestCase -->
+    </test> <!-- RegressionCore -->
+  </suite> <!-- Regression -->
+</testng-results>
