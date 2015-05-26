@@ -1,5 +1,6 @@
 package logging;
 
+
 import java.util.logging.Logger;
 
 import org.testng.ITestContext;
@@ -11,14 +12,10 @@ import org.testng.ITestResult;
  */
 public class TestLogger implements ITestListener {
 	
-	Logger LOGGER = Logger.getLogger("InfoLogging");
 	
+	//TODO - -implement using l4j2
+	Logger LOGGER = Logger.getLogger("corelogger");	
 	
-	// Logs message to appender
-	public void log(String logMsg){
-		
-		LOGGER.info(logMsg);
-	}
 
 	public void onTestStart(ITestResult result) {
 		

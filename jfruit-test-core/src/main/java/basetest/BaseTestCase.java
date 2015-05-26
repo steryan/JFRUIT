@@ -1,8 +1,10 @@
 package basetest;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import logging.TestLogger;
 
 /**
  * BaseTestClass with Before and After suite methods 
@@ -13,21 +15,23 @@ import logging.TestLogger;
 public class BaseTestCase {
 	
 	//Create a logger to append logs to file or console 
-	TestLogger logger = new TestLogger();
+	//TestLogger logger = new TestLogger();
+	
+
+	 static Logger logger = LogManager.getLogger(BaseTestCase.class.getName());
 	
 	/**
 	 * beforeSuite 
 	 */
 	@BeforeSuite
 	public void beforeSuite() {
-		
-		logger.log("Before suite:");
+		logger.info("Before suite:");
 		
 	}
 	
 	@AfterSuite
 	public void afterSuite() {
-		logger.log("Before suite:");
+		logger.info("After suite:");
 	}
 
 }
