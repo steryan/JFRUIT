@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="80" started-at="2015-05-26T07:04:33Z" finished-at="2015-05-26T07:04:33Z">
+  <suite name="Default suite" duration-ms="78" started-at="2015-05-26T16:41:20Z" finished-at="2015-05-26T16:41:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="80" started-at="2015-05-26T07:04:33Z" finished-at="2015-05-26T07:04:33Z">
+    <test name="Default test" duration-ms="78" started-at="2015-05-26T16:41:20Z" finished-at="2015-05-26T16:41:20Z">
       <class name="CoreTestCase">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:CoreTestCase@1bf499f]" name="beforeSuite" is-config="true" duration-ms="96" started-at="2015-05-26T08:04:32Z" finished-at="2015-05-26T08:04:33Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:CoreTestCase@7ee335]" name="beforeSuite" is-config="true" duration-ms="110" started-at="2015-05-26T17:41:20Z" finished-at="2015-05-26T17:41:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="loggingTest()[pri:0, instance:CoreTestCase@1bf499f]" name="loggingTest" duration-ms="31" started-at="2015-05-26T08:04:33Z" finished-at="2015-05-26T08:04:33Z">
+        <test-method status="PASS" signature="loggingTest()[pri:0, instance:CoreTestCase@7ee335]" name="loggingTest" duration-ms="26" started-at="2015-05-26T17:41:20Z" finished-at="2015-05-26T17:41:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loggingTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:CoreTestCase@1bf499f]" name="afterSuite" is-config="true" duration-ms="3" started-at="2015-05-26T08:04:33Z" finished-at="2015-05-26T08:04:33Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:CoreTestCase@7ee335]" name="afterSuite" is-config="true" duration-ms="4" started-at="2015-05-26T17:41:20Z" finished-at="2015-05-26T17:41:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
