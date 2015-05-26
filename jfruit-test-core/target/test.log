@@ -1,3 +1,0 @@
-2015-05-26 08:04:33,069 INFO b.BaseTestCase [main] Before suite:
-2015-05-26 08:04:33,148 INFO CoreTestCase [main] : Entering logging test
-2015-05-26 08:04:33,211 INFO b.BaseTestCase [main] After suite:
