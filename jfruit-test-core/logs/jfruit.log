@@ -1,0 +1,10 @@
+2015-06-05 17:33:48,819 INFO b.BaseTestCase [main] Before suite:
+2015-06-05 17:33:48,878 INFO l.BaseTestLogger [main] START SUITE
+2015-06-05 17:33:48,943 INFO l.BaseTestLogger [main] TEST START[TestResult name=loggingTestFail status=STARTED method=CoreTestCase.loggingTestFail()[pri:0, instance:coretest.CoreTestCase@13c438e] output={null}]
+2015-06-05 17:33:48,944 INFO c.CoreTestCase [main] : Entering fail logging test
+2015-06-05 17:33:48,977 ERROR l.BaseTestLogger [main] TEST FAIL: [TestResult name=loggingTestFail status=FAILURE method=CoreTestCase.loggingTestFail()[pri:0, instance:coretest.CoreTestCase@13c438e] output={null}]
+2015-06-05 17:33:48,984 INFO l.BaseTestLogger [main] TEST START[TestResult name=loggingTestPass status=STARTED method=CoreTestCase.loggingTestPass()[pri:0, instance:coretest.CoreTestCase@13c438e] output={null}]
+2015-06-05 17:33:48,985 INFO c.CoreTestCase [main] : Entering pass slogging test
+2015-06-05 17:33:48,989 INFO l.BaseTestLogger [main] TEST PASS[TestResult name=loggingTestPass status=SUCCESS method=CoreTestCase.loggingTestPass()[pri:0, instance:coretest.CoreTestCase@13c438e] output={null}]
+2015-06-05 17:33:49,061 INFO l.BaseTestLogger [main] FINISH SUITE
+2015-06-05 17:33:49,067 INFO b.BaseTestCase [main] After suite:

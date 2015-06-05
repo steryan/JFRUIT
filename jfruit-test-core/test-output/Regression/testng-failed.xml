@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression]">
+  <listeners>
+    <listener class-name="logging.BaseTestLogger"/>
+  </listeners>
+  <test name="RegressionCore(failed)">
+    <classes>
+      <class name="coretest.CoreTestCase">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="loggingTestFail"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- coretest.CoreTestCase -->
+    </classes>
+  </test> <!-- RegressionCore(failed) -->
+</suite> <!-- Failed suite [Regression] -->

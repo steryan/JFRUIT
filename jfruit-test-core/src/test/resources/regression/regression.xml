@@ -1,9 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
   
 <suite name="Regression" verbose="1" >
+<listeners>
+<listener class-name="logging.BaseTestLogger" />
+</listeners>
   <test name="RegressionCore" >
     <classes>
-       <class name="basetest.BaseTestCase"/>
+       <class name="coretest.CoreTestCase"/>
     </classes>
   </test>
  </suite>

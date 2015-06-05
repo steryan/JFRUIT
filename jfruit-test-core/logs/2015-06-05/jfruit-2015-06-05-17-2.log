@@ -1,0 +1,5 @@
+2015-06-05 17:22:02,015 INFO b.BaseTestCase [main] Before suite:
+2015-06-05 17:22:02,108 INFO l.BaseTestLogger [main] Test Case: [TestResult name=loggingTest status=STARTED method=CoreTestCase.loggingTest()[pri:0, instance:coretest.CoreTestCase@13c438e] output={null}]
+2015-06-05 17:22:02,110 INFO c.CoreTestCase [main] : Entering logging test
+2015-06-05 17:22:02,136 ERROR l.BaseTestLogger [main] Test Case: [TestResult name=loggingTest status=FAILURE method=CoreTestCase.loggingTest()[pri:0, instance:coretest.CoreTestCase@13c438e] output={null}]
+2015-06-05 17:22:02,209 INFO b.BaseTestCase [main] After suite:
