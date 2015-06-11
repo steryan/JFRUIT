@@ -6,8 +6,7 @@
       <class name="coretest.CoreTestCase">
         <methods>
           <include name="beforeSuite"/>
-          <include name="loggingTest"/>
-          <include name="afterSuite"/>
+          <include name="loggingTestPass"/>
         </methods>
       </class> <!-- coretest.CoreTestCase -->
     </classes>

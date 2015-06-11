@@ -7,25 +7,24 @@ import org.testng.annotations.Test;
 
 import basetest.BaseTestCase;
 
-
 @Test
-public class CoreTestCase extends BaseTestCase{
+public class CoreTestCase extends BaseTestCase {
 
-	//Create a logger to append logs to file or console 
+	// Create a logger to append logs to file or console
 	static Logger logger = LogManager.getLogger(CoreTestCase.class.getName());
 
 	@Test
-	public void loggingTestPass(){
-		logger.info(": Entering pass slogging test");
+	public void loggingTestPass() {
+		logger.info("Entering passing logging test");
 
 		Assert.assertTrue(true);
 	}
-	
-	@Test
-	public void loggingTestFail(){
-		logger.info(": Entering fail logging test");
 
-		Assert.assertTrue(false);
-	}
+	// @Test
+	// public void loggingTestFail(){
+	// logger.info(": Entering fail logging test");
+	//
+	// Assert.assertTrue(false);
+	// }
 
 }

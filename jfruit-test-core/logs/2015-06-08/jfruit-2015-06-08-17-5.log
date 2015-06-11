@@ -1,0 +1,6 @@
+2015-06-08 17:31:07,415 INFO b.BaseTestCase [main] Before suite:
+2015-06-08 17:31:07,438 INFO c.CoreConfig [main] Loading Configuration Properties -
+2015-06-08 17:31:07,439 INFO c.CoreConfig [main] Browser: firefox
+2015-06-08 17:31:07,440 INFO c.CoreConfig [main] User: sryan
+2015-06-08 17:31:07,510 INFO c.CoreTestCase [main] : Entering pass slogging test
+2015-06-08 17:31:07,581 INFO b.BaseTestCase [main] After suite:

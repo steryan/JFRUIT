@@ -9,8 +9,8 @@
       <class name="coretest.CoreTestCase">
         <methods>
           <include name="beforeSuite"/>
+          <include name="loggingTestPass"/>
           <include name="loggingTestFail"/>
-          <include name="afterSuite"/>
         </methods>
       </class> <!-- coretest.CoreTestCase -->
     </classes>
