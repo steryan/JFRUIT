@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="89" started-at="2015-06-11T16:33:29Z" finished-at="2015-06-11T16:33:29Z">
+  <suite name="Default suite" duration-ms="85" started-at="2015-06-23T07:22:40Z" finished-at="2015-06-23T07:22:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="89" started-at="2015-06-11T16:33:29Z" finished-at="2015-06-11T16:33:29Z">
+    <test name="Default test" duration-ms="85" started-at="2015-06-23T07:22:40Z" finished-at="2015-06-23T07:22:40Z">
       <class name="coretest.CoreTestCase">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:coretest.CoreTestCase@66f887]" name="beforeSuite" is-config="true" duration-ms="111" started-at="2015-06-11T17:33:29Z" finished-at="2015-06-11T17:33:29Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:coretest.CoreTestCase@ef5641]" name="beforeSuite" is-config="true" duration-ms="115" started-at="2015-06-23T08:22:40Z" finished-at="2015-06-23T08:22:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="loggingTestPass()[pri:0, instance:coretest.CoreTestCase@66f887]" name="loggingTestPass" duration-ms="37" started-at="2015-06-11T17:33:29Z" finished-at="2015-06-11T17:33:29Z">
+        <test-method status="PASS" signature="loggingTestPass()[pri:0, instance:coretest.CoreTestCase@ef5641]" name="loggingTestPass" duration-ms="37" started-at="2015-06-23T08:22:40Z" finished-at="2015-06-23T08:22:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loggingTestPass -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:coretest.CoreTestCase@66f887]" name="afterSuite" is-config="true" duration-ms="3" started-at="2015-06-11T17:33:29Z" finished-at="2015-06-11T17:33:29Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:coretest.CoreTestCase@ef5641]" name="afterSuite" is-config="true" duration-ms="5" started-at="2015-06-23T08:22:40Z" finished-at="2015-06-23T08:22:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

@@ -1,11 +1,11 @@
-package coretest;
+package com.jfruit.core.test;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import basetest.BaseTestCase;
+import com.jfruit.core.basetest.BaseTestCase;
 
 @Test
 public class CoreTestCase extends BaseTestCase {

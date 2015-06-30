@@ -1,4 +1,4 @@
-package config;
+package com.jfruit.core.config;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

@@ -1,0 +1,8 @@
+2015-06-11 17:33:29,798 INFO b.BaseTestCase [main] Before suite
+2015-06-11 17:33:29,822 INFO c.CoreConfigUtil [main] ================================
+2015-06-11 17:33:29,823 INFO c.CoreConfigUtil [main] Loading Configuration Properties
+2015-06-11 17:33:29,824 INFO c.CoreConfigUtil [main] Storing: browser: firefox
+2015-06-11 17:33:29,825 INFO c.CoreConfigUtil [main] Storing: user: sryan
+2015-06-11 17:33:29,826 INFO c.CoreConfigUtil [main] ================================
+2015-06-11 17:33:29,900 INFO c.CoreTestCase [main] Entering passing logging test
+2015-06-11 17:33:29,973 INFO b.BaseTestCase [main] After suite

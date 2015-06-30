@@ -1,4 +1,4 @@
-package basetest;
+package com.jfruit.core.basetest;
 
 import java.io.IOException;
 
@@ -8,7 +8,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-import config.CoreConfigUtil;
+import com.jfruit.core.config.CoreConfigUtil;
 
 /**
  * BaseTestClass with Before and After suite methods
@@ -19,12 +19,9 @@ import config.CoreConfigUtil;
 @Test
 public class BaseTestCase {
 
-	// Create a logger to append logs to file or console
-	// TestLogger logger = new TestLogger();
-
-	 //String coreConfigPropertiesFile = "/src/main/resources/config/jfruit-config.properties";
 	String coreConfigPropertiesFile = "jfruit-config.properties";
 
+	// Logger for logging to console and file
 	static Logger logger = LogManager.getLogger(BaseTestCase.class.getName());
 
 	/**
