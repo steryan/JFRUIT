@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="89" started-at="2015-06-30T07:34:32Z" finished-at="2015-06-30T07:34:32Z">
+  <suite name="Default suite" duration-ms="165" started-at="2015-08-07T16:44:13Z" finished-at="2015-08-07T16:44:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="89" started-at="2015-06-30T07:34:32Z" finished-at="2015-06-30T07:34:32Z">
+    <test name="Default test" duration-ms="165" started-at="2015-08-07T16:44:13Z" finished-at="2015-08-07T16:44:13Z">
       <class name="com.jfruit.core.test.CoreTestCase">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.jfruit.core.test.CoreTestCase@14a0f81]" name="beforeSuite" is-config="true" duration-ms="162" started-at="2015-06-30T08:34:32Z" finished-at="2015-06-30T08:34:32Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.jfruit.core.test.CoreTestCase@cc995c]" name="beforeSuite" is-config="true" duration-ms="214" started-at="2015-08-07T17:44:13Z" finished-at="2015-08-07T17:44:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="loggingTestPass()[pri:0, instance:com.jfruit.core.test.CoreTestCase@14a0f81]" name="loggingTestPass" duration-ms="37" started-at="2015-06-30T08:34:32Z" finished-at="2015-06-30T08:34:32Z">
+        <test-method status="PASS" signature="loggingTestPass()[pri:0, instance:com.jfruit.core.test.CoreTestCase@cc995c]" name="loggingTestPass" duration-ms="104" started-at="2015-08-07T17:44:13Z" finished-at="2015-08-07T17:44:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loggingTestPass -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.jfruit.core.test.CoreTestCase@14a0f81]" name="afterSuite" is-config="true" duration-ms="4" started-at="2015-06-30T08:34:32Z" finished-at="2015-06-30T08:34:32Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.jfruit.core.test.CoreTestCase@cc995c]" name="afterSuite" is-config="true" duration-ms="5" started-at="2015-08-07T17:44:14Z" finished-at="2015-08-07T17:44:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

@@ -11,7 +11,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /*
- * Reads properties from the configuration file and makes them accessabile from
+ * Reads properties from the configuration file and makes them accessible from
  * getPropertyValue
  * @author sryan
  */
@@ -20,7 +20,7 @@ public class CoreConfigUtil {
 	static Logger logger = LogManager.getLogger(CoreConfigUtil.class.getName());
 	
 	// Configuration store
-	Map<String, String> map = new HashMap<String, String>();
+	static Map<String, String> map = new HashMap<String, String>();
 
 	/*
 	 * Read properties from the configuration file and store them in a Map 
@@ -31,6 +31,7 @@ public class CoreConfigUtil {
 
 		InputStream inputStream = getClass().getClassLoader()
 				.getResourceAsStream(propFileName);
+		
 
 		if (inputStream != null) {
 			prop.load(inputStream);
