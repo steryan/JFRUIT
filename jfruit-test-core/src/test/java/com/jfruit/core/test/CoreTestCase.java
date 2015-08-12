@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 
 import com.jfruit.core.basetest.BaseTestCase;
 import com.jfruit.core.config.CoreConfigEnums;
-import com.jfruit.core.config.CoreConfigUtil;
 
 @Test
 public class CoreTestCase extends BaseTestCase {
@@ -16,7 +15,7 @@ public class CoreTestCase extends BaseTestCase {
 	static Logger logger = LogManager.getLogger(CoreTestCase.class.getName());
 
 	@Test
-	public void loggingTestPass() {
+	public void loadConfigurationTest() {
 		logger.info("Entering passing logging test");
 
 		String browser  = BaseTestCase.getPropertyValue(CoreConfigEnums.BROWSER);
