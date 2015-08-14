@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6301" started-at="2015-08-14T21:04:46Z" finished-at="2015-08-14T21:04:52Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6301" started-at="2015-08-14T21:04:46Z" finished-at="2015-08-14T21:04:52Z">
+      <class name="com.jfruit.application.ui.UiTestCase">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.jfruit.application.ui.UiTestCase@159e6f1]" name="beforeSuite" is-config="true" duration-ms="103" started-at="2015-08-14T22:04:31Z" finished-at="2015-08-14T22:04:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeUiSuite()[pri:0, instance:com.jfruit.application.ui.UiTestCase@159e6f1]" name="beforeUiSuite" is-config="true" duration-ms="15295" started-at="2015-08-14T22:04:31Z" depends-on-methods="com.jfruit.core.basetest.BaseTestCase.beforeSuite" finished-at="2015-08-14T22:04:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeUiSuite -->
+        <test-method status="PASS" signature="searchGoogle()[pri:0, instance:com.jfruit.application.ui.UiTestCase@159e6f1]" name="searchGoogle" duration-ms="6253" started-at="2015-08-14T22:04:46Z" finished-at="2015-08-14T22:04:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchGoogle -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.jfruit.application.ui.UiTestCase@159e6f1]" name="afterSuite" is-config="true" duration-ms="4" started-at="2015-08-14T22:04:52Z" finished-at="2015-08-14T22:04:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.jfruit.application.ui.UiTestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
