@@ -14,7 +14,7 @@ public class WebDriverUtility  {
 	/* Return a Webdriver instance based on the browser 
 	 *
 	 */
-	public WebDriver getDriver (String browser){
+	public static WebDriver getDriver (String browser){
 
 		//WebDriver driver;
 		if (browser == "chrome"){
@@ -25,12 +25,12 @@ public class WebDriverUtility  {
 		return new FirefoxDriver();
 	}
 
-	public void navigate(WebDriver driver, String url) {
+	public static void navigate(WebDriver driver, String url) {
 		// Open Url
 		driver.navigate().to(url);
 	}
 
-	public void waitforPageToLoad(WebDriver driver, final String pageTitle, int timeout){
+	public static void waitForPageToLoad(WebDriver driver, final String pageTitle, int timeout){
 	// Google's search is rendered dynamically with JavaScript.
 	// Wait for the page to load, timeout after 10 seconds
 	// TODO: Need to understand this code
@@ -46,7 +46,7 @@ public class WebDriverUtility  {
 	/* Close the browser
 	 * 
 	 */
-	public void closeBrowser(WebDriver driver){
+	public static void closeBrowser(WebDriver driver){
 
 		//Close the browser
 		driver.quit();

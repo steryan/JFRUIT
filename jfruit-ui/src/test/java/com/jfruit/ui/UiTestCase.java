@@ -46,7 +46,7 @@ public class UiTestCase extends BaseTestCaseUi
         
         // Google's search is rendered dynamically with JavaScript.
         // Wait for the page to load, timeout after 10 seconds
-        webDriverUtil.waitforPageToLoad(driver, searchString, 10);
+        webDriverUtility.waitForPageToLoad(driver, searchString, 10);
 
         // Verify Google Search results 
         logger.info("Page title is: " + driver.getTitle());
@@ -54,7 +54,7 @@ public class UiTestCase extends BaseTestCaseUi
         Assert.assertTrue(driver.getTitle().toLowerCase().contains(searchString));
         
         //Close the browser
-        webDriverUtil.closeBrowser(driver);
+        webDriverUtility.closeBrowser(driver);
     }
 
 }

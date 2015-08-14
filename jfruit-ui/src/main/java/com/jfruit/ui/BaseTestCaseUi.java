@@ -21,8 +21,8 @@ public class BaseTestCaseUi extends BaseTestCase
 	// Logger for logging to console and file
 	static Logger logger = LogManager.getLogger(BaseTestCaseUi.class.getName());
 	
-	WebDriver driver;
-	WebDriverUtility webDriverUtil;
+	protected WebDriver driver;
+	protected WebDriverUtility webDriverUtility;
 	
 	/**
 	 * beforeUiSuite
@@ -32,23 +32,15 @@ public class BaseTestCaseUi extends BaseTestCase
 	@BeforeSuite
 	public void beforeUiSuite() throws IOException {
 		logger.info("Before UI Suite");
-
-		webDriverUtil = new WebDriverUtility();
 		
 		//Start browser through WebDriver
-		driver = webDriverUtil.getDriver(
+		driver = WebDriverUtility.getDriver(
 				BaseTestCase.getPropertyValue(CoreConfigEnums.BROWSER));
-		
 	}
-
 
 	@AfterSuite
 	public void afterSuite() {
 		logger.info("After UI Suite");
 	} 
-	
-//	public WebDriver getWebDriver(){
-//		return this.driver;
-//	}
    
 }
