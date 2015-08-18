@@ -34,9 +34,7 @@ public class GooglePOModel extends BaseTestCaseUi{
 	    // Now submit the form. WebDriver will find the form for us from the element
 	    element.submit();
 	    
-	    //TODO fix
-		//Wait for page to load - The title of the search page is the search string
-		//WebDriverUtility.waitForPageToLoad(driver, searchString, 30);
+
 		
 	}
 
