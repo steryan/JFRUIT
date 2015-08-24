@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="coretest.CoreTestCase">
+      <class name="com.jfruit.core.test.SshClientTestCase">
         <methods>
+          <include name="testSendCommand"/>
           <include name="beforeSuite"/>
-          <include name="loggingTestPass"/>
+          <include name="afterSuite"/>
         </methods>
-      </class> <!-- coretest.CoreTestCase -->
+      </class> <!-- com.jfruit.core.test.SshClientTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

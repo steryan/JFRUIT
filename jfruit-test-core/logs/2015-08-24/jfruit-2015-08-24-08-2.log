@@ -1,0 +1,18 @@
+2015-08-24 08:02:56,084 INFO c.j.c.b.BaseTestCase [main] Before suite
+2015-08-24 08:02:56,134 INFO c.j.c.c.CoreConfigUtil [main] ================================
+2015-08-24 08:02:56,135 INFO c.j.c.c.CoreConfigUtil [main] Loading Configuration Properties
+2015-08-24 08:02:56,144 INFO c.j.c.c.CoreConfigUtil [main] Storing: browser: firefox
+2015-08-24 08:02:56,145 INFO c.j.c.c.CoreConfigUtil [main] Storing: sshuser: jfruit
+2015-08-24 08:02:56,146 INFO c.j.c.c.CoreConfigUtil [main] Storing: sshpass: jfruit
+2015-08-24 08:02:56,147 INFO c.j.c.c.CoreConfigUtil [main] Storing: sshhost: localhost
+2015-08-24 08:02:56,148 INFO c.j.c.c.CoreConfigUtil [main] ================================
+2015-08-24 08:02:56,237 INFO c.j.c.t.SshClientTestCase [main] Entering SSH Client Test
+2015-08-24 08:02:56,238 INFO c.j.c.c.CoreConfigUtil [main] Getting :sshuser: jfruit
+2015-08-24 08:02:56,242 INFO c.j.c.c.CoreConfigUtil [main] Getting :sshpass: jfruit
+2015-08-24 08:02:56,244 INFO c.j.c.c.CoreConfigUtil [main] Getting :sshhost: localhost
+2015-08-24 08:02:56,246 INFO c.j.c.t.SshClientTestCase [main] Using SSH User: jfruit
+2015-08-24 08:02:56,248 INFO c.j.c.t.SshClientTestCase [main] Using SSH Pasword: jfruit
+2015-08-24 08:02:56,248 INFO c.j.c.t.SshClientTestCase [main] Using SSH Host: localhost
+2015-08-24 08:02:56,249 INFO c.j.c.t.SshClientTestCase [main] Executing remote command: uname -r
+2015-08-24 08:02:56,309 ERROR c.j.c.b.BaseTestCase [main] java.io.FileNotFoundException:  (No such file or directory)
+2015-08-24 08:02:59,070 INFO c.j.c.b.BaseTestCase [main] After suite

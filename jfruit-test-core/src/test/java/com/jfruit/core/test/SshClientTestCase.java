@@ -43,7 +43,7 @@ public class SshClientTestCase extends BaseTestCase{
 
      logger.info("Executing remote command: " + command);
 
-     SshClient instance = new SshClient(sshUser, sshPass, sshHost, "");
+     SshClient instance = new SshClient(sshUser, sshPass, sshHost, "~/.ssh/known_hosts");
      String errorMessage = instance.connect();
 
      if(errorMessage != null)
@@ -58,6 +58,6 @@ public class SshClientTestCase extends BaseTestCase{
      String result = instance.sendCommand(command);
      // close only after all commands are sent
      instance.close();
-     Assert.assertEquals(expResult, result);
+     Assert.assertEquals(expResult, result.trim());
   }
 }

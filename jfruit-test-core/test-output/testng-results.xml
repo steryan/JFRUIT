@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="165" started-at="2015-08-07T16:44:13Z" finished-at="2015-08-07T16:44:13Z">
+  <suite name="Default suite" duration-ms="2941" started-at="2015-08-24T07:15:51Z" finished-at="2015-08-24T07:15:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="165" started-at="2015-08-07T16:44:13Z" finished-at="2015-08-07T16:44:13Z">
-      <class name="com.jfruit.core.test.CoreTestCase">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.jfruit.core.test.CoreTestCase@cc995c]" name="beforeSuite" is-config="true" duration-ms="214" started-at="2015-08-07T17:44:13Z" finished-at="2015-08-07T17:44:13Z">
+    <test name="Default test" duration-ms="2941" started-at="2015-08-24T07:15:51Z" finished-at="2015-08-24T07:15:53Z">
+      <class name="com.jfruit.core.test.SshClientTestCase">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.jfruit.core.test.SshClientTestCase@dc0c5d]" name="beforeSuite" is-config="true" duration-ms="117" started-at="2015-08-24T08:15:50Z" finished-at="2015-08-24T08:15:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="loggingTestPass()[pri:0, instance:com.jfruit.core.test.CoreTestCase@cc995c]" name="loggingTestPass" duration-ms="104" started-at="2015-08-07T17:44:13Z" finished-at="2015-08-07T17:44:13Z">
+        <test-method status="PASS" signature="testSendCommand()[pri:0, instance:com.jfruit.core.test.SshClientTestCase@dc0c5d]" name="testSendCommand" duration-ms="2890" started-at="2015-08-24T08:15:51Z" finished-at="2015-08-24T08:15:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loggingTestPass -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.jfruit.core.test.CoreTestCase@cc995c]" name="afterSuite" is-config="true" duration-ms="5" started-at="2015-08-07T17:44:14Z" finished-at="2015-08-07T17:44:14Z">
+        </test-method> <!-- testSendCommand -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.jfruit.core.test.SshClientTestCase@dc0c5d]" name="afterSuite" is-config="true" duration-ms="3" started-at="2015-08-24T08:15:54Z" finished-at="2015-08-24T08:15:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.jfruit.core.test.CoreTestCase -->
+      </class> <!-- com.jfruit.core.test.SshClientTestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -87,7 +87,7 @@ public class SshClient
 					strConnectionIP, intConnectionPort);
 			sesConnection.setPassword(strPassword);
 			// UNCOMMENT THIS FOR TESTING PURPOSES, BUT DO NOT USE IN PRODUCTION
-			// sesConnection.setConfig("StrictHostKeyChecking", "no");
+			sesConnection.setConfig("StrictHostKeyChecking", "no");
 			sesConnection.connect(intTimeOut);
 		}
 		catch(JSchException jschX)

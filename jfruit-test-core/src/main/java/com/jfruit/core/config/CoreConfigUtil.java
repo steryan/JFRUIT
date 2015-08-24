@@ -45,10 +45,10 @@ public class CoreConfigUtil {
 		logger.info("Loading Configuration Properties");
 		
 		// load the properties into map for later retrieval
-		setPropValue(CoreConfigEnums.BROWSER.toString(),prop.getProperty("CoreConfigEnums.BROWSER.toString()"));
-		setPropValue(CoreConfigEnums.SSHUSER.toString(),prop.getProperty("CoreConfigEnums.SSHUSER.toString()"));
-		setPropValue(CoreConfigEnums.SSHPASS.toString(),prop.getProperty("CoreConfigEnums.SSHPASS.toString()"));
-		setPropValue(CoreConfigEnums.SSHHOST.toString(),prop.getProperty("CoreConfigEnums.SSHHOST.toString()"));
+		setPropValue(CoreConfigEnums.BROWSER.toString(),prop.getProperty(CoreConfigEnums.BROWSER.toString()));
+		setPropValue(CoreConfigEnums.SSHUSER.toString(),prop.getProperty(CoreConfigEnums.SSHUSER.toString()));
+		setPropValue(CoreConfigEnums.SSHPASS.toString(),prop.getProperty(CoreConfigEnums.SSHPASS.toString()));
+		setPropValue(CoreConfigEnums.SSHHOST.toString(),prop.getProperty(CoreConfigEnums.SSHHOST.toString()));
 		
 		logger.info("================================");
 

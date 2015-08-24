@@ -1,0 +1,17 @@
+2015-08-24 08:07:04,346 INFO c.j.c.b.BaseTestCase [main] Before suite
+2015-08-24 08:07:04,369 INFO c.j.c.c.CoreConfigUtil [main] ================================
+2015-08-24 08:07:04,370 INFO c.j.c.c.CoreConfigUtil [main] Loading Configuration Properties
+2015-08-24 08:07:04,378 INFO c.j.c.c.CoreConfigUtil [main] Storing: browser: firefox
+2015-08-24 08:07:04,379 INFO c.j.c.c.CoreConfigUtil [main] Storing: sshuser: jfruit
+2015-08-24 08:07:04,380 INFO c.j.c.c.CoreConfigUtil [main] Storing: sshpass: jfruit
+2015-08-24 08:07:04,381 INFO c.j.c.c.CoreConfigUtil [main] Storing: sshhost: localhost
+2015-08-24 08:07:04,382 INFO c.j.c.c.CoreConfigUtil [main] ================================
+2015-08-24 08:07:04,452 INFO c.j.c.t.SshClientTestCase [main] Entering SSH Client Test
+2015-08-24 08:07:04,453 INFO c.j.c.c.CoreConfigUtil [main] Getting :sshuser: jfruit
+2015-08-24 08:07:04,454 INFO c.j.c.c.CoreConfigUtil [main] Getting :sshpass: jfruit
+2015-08-24 08:07:04,455 INFO c.j.c.c.CoreConfigUtil [main] Getting :sshhost: localhost
+2015-08-24 08:07:04,456 INFO c.j.c.t.SshClientTestCase [main] Using SSH User: jfruit
+2015-08-24 08:07:04,458 INFO c.j.c.t.SshClientTestCase [main] Using SSH Pasword: jfruit
+2015-08-24 08:07:04,459 INFO c.j.c.t.SshClientTestCase [main] Using SSH Host: localhost
+2015-08-24 08:07:04,460 INFO c.j.c.t.SshClientTestCase [main] Executing remote command: uname -r
+2015-08-24 08:07:08,447 INFO c.j.c.b.BaseTestCase [main] After suite
