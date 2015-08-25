@@ -1,13 +1,31 @@
 package com.jfruit.application.jfruit_application;
 
+import junit.framework.Assert;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.testng.annotations.Test;
+
+import com.jfruit.core.basetest.BaseTestCase;
+
 /**
  * Hello world!
  *
  */
-public class App 
+@Test
+public class App extends BaseTestCase
 {
-    public static void main( String[] args )
+	
+	// Logger for logging to console and file
+	static Logger logger = LogManager.getLogger(App.class.getName());
+	
+	@Test
+    public static void applicationTest( String[] args )
     {
-        System.out.println( "Hello World!" );
+		logger.info("Sample Application Test");
+		
+		
+		
+        Assert.assertTrue(true);
     }
 }
