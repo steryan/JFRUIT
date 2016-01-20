@@ -1,12 +1,9 @@
 package com.jfruit.core.utility;
 
-/* 
- * SSHManager
- * 
- * @author 
- * @version 1.0
+/**
+ * SSHClient for remote connections
+ * @author Stephen Ryan
  */
-
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -31,6 +28,13 @@ public class SshClient
 	private Session sesConnection;
 	private int intTimeOut;
 
+	/**
+	 * Create JSch instance 
+	 * @param userName
+	 * @param password
+	 * @param connectionIP
+	 * @param knownHostsFileName
+	 */
 	private void doCommonConstructorActions(String userName, 
 			String password, String connectionIP, String knownHostsFileName)
 	{
@@ -50,6 +54,13 @@ public class SshClient
 		strConnectionIP = connectionIP;
 	}
 
+	/**
+	 *  Connect to remote host on default port
+	 * @param userName
+	 * @param password
+	 * @param connectionIP
+	 * @param knownHostsFileName
+	 */
 	public SshClient(String userName, String password, 
 			String connectionIP, String knownHostsFileName)
 	{
@@ -59,6 +70,7 @@ public class SshClient
 		intTimeOut = 60000;
 	}
 
+	// Connect to a remote host on a given port
 	public SshClient(String userName, String password, String connectionIP, 
 			String knownHostsFileName, int connectionPort)
 	{
@@ -68,6 +80,15 @@ public class SshClient
 		intTimeOut = 60000;
 	}
 
+	/**
+	 * Connect to a remote host on a given port with timeout
+	 * @param userName
+	 * @param password
+	 * @param connectionIP
+	 * @param knownHostsFileName
+	 * @param connectionPort
+	 * @param timeOutMilliseconds
+	 */
 	public SshClient(String userName, String password, String connectionIP, 
 			String knownHostsFileName, int connectionPort, int timeOutMilliseconds)
 	{
@@ -77,6 +98,10 @@ public class SshClient
 		intTimeOut = timeOutMilliseconds;
 	}
 
+	/**
+	 *  Establish ssh connection
+	 * @return error or null
+	 */
 	public String connect()
 	{
 		String errorMessage = null;
@@ -109,6 +134,11 @@ public class SshClient
 		logger.warn(warnMessage);
 	}
 
+	/**
+	 *  Send a command via the SSH connection and return the output
+	 * @param command
+	 * @return command output
+	 */
 	public String sendCommand(String command)
 	{
 		StringBuilder outputBuffer = new StringBuilder();
@@ -143,6 +173,9 @@ public class SshClient
 		return outputBuffer.toString();
 	}
 
+	/**
+	 * Close the ssh session
+	 */
 	public void close()
 	{
 		sesConnection.disconnect();

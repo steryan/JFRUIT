@@ -9,6 +9,11 @@ import com.jfruit.core.basetest.BaseTestCase;
 import com.jfruit.core.config.CoreConfigEnums;
 import com.jfruit.core.utility.SshClient;
 
+/**
+ * Test executing a command via SSHClient
+ * @author stepryan
+ *
+ */
 public class SshClientTestCase extends BaseTestCase{
 	
 	// Create a logger to append logs to file or console
@@ -32,17 +37,12 @@ public class SshClientTestCase extends BaseTestCase{
 		logger.info("Using SSH Pasword: " + sshPass);
 		logger.info("Using SSH Host: " + sshHost);
 		
-     /**
-      * YOU MUST CHANGE THE FOLLOWING
-      * FILE_NAME: A FILE IN THE DIRECTORY
-      * USER: LOGIN USER NAME
-      * PASSWORD: PASSWORD FOR THAT USER
-      * HOST: IP ADDRESS OF THE SSH SERVER
-     **/
+     // Get the OS kernel version
      String command = "uname -r";
 
      logger.info("Executing remote command: " + command);
 
+     //Connect to remote host
      SshClient instance = new SshClient(sshUser, sshPass, sshHost, "~/.ssh/known_hosts");
      String errorMessage = instance.connect();
 
@@ -58,6 +58,8 @@ public class SshClientTestCase extends BaseTestCase{
      String result = instance.sendCommand(command);
      // close only after all commands are sent
      instance.close();
+     
+     // Verify the response matches the expected
      Assert.assertEquals(expResult, result.trim());
   }
 }

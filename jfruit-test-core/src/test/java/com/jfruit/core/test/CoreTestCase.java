@@ -8,6 +8,11 @@ import org.testng.annotations.Test;
 import com.jfruit.core.basetest.BaseTestCase;
 import com.jfruit.core.config.CoreConfigEnums;
 
+/**
+ * Test Configuration and logging implementation
+ * @author stepryan
+ *
+ */
 @Test
 public class CoreTestCase extends BaseTestCase {
 
@@ -24,12 +29,5 @@ public class CoreTestCase extends BaseTestCase {
 
 		Assert.assertTrue(true);
 	}
-
-	// @Test
-	// public void loggingTestFail(){
-	// logger.info(": Entering fail logging test");
-	//
-	// Assert.assertTrue(false);
-	// }
 
 }

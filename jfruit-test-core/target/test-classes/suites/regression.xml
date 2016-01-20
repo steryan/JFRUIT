@@ -1,13 +1,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-  
-<suite name="Regression" verbose="1" >
-<listeners>
-<listener class-name="logging.BaseTestLogger" />
-</listeners>
-  <test name="RegressionCore" >
-    <classes>
-       <class name="coretest.CoreTestCase"/>
-    </classes>
-  </test>
- </suite>
+
+<suite name="Regression" verbose="1">
+	<listeners>
+		<listener class-name="com.jfruit.core.logging.BaseTestLogger" />
+	</listeners>
+	<test name="RegressionCore">
+		<classes>
+			<class name="com.jfruit.core.test.CoreTestCase" />
+			<class name="com.jfruit.core.test.SshClientTestCase" />
+		</classes>
+	</test>
+</suite>
  
