@@ -25,7 +25,7 @@ public class UiTestCase extends BaseTestCaseUi
      * @param testName name of the test case
      */
 	@Test
-    public void UiTestCase( )
+    public void naviagteGoogleWeb( )
     {
 		String searchString = "Cheese!";
 		

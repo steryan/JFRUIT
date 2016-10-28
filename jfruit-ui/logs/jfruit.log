@@ -1,0 +1,12 @@
+2016-10-20 16:47:00,482 INFO c.j.c.b.BaseTestCase [main] Before suite
+2016-10-20 16:47:00,483 INFO c.j.c.c.CoreConfigUtil [main] ================================
+2016-10-20 16:47:00,483 INFO c.j.c.c.CoreConfigUtil [main] Loading Configuration Properties
+2016-10-20 16:47:00,484 INFO c.j.c.c.CoreConfigUtil [main] Storing: browser: firefox
+2016-10-20 16:47:00,484 INFO c.j.c.c.CoreConfigUtil [main] Storing: sshuser: jfruit
+2016-10-20 16:47:00,484 INFO c.j.c.c.CoreConfigUtil [main] Storing: sshpass: jfruit
+2016-10-20 16:47:00,484 INFO c.j.c.c.CoreConfigUtil [main] Storing: sshhost: localhost
+2016-10-20 16:47:00,484 INFO c.j.c.c.CoreConfigUtil [main] ================================
+2016-10-20 16:47:00,485 INFO c.j.u.BaseTestCaseUi [main] Before UI Suite
+2016-10-20 16:47:00,485 INFO c.j.c.c.CoreConfigUtil [main] Getting :browser: firefox
+2016-10-20 16:47:05,367 INFO c.j.c.t.CoreTestCase [main] Page title is: Google
+2016-10-20 16:47:15,463 INFO c.j.u.BaseTestCaseUi [main] After UI Suite
