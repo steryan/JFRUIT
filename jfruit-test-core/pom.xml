@@ -35,6 +35,12 @@
 			<artifactId>jsch</artifactId>
 			<version>0.1.53</version>
 		</dependency>
+		<dependency>
+      		<groupId>org.testng</groupId>
+      		<artifactId>testng</artifactId>
+      		<version>6.9.8</version>
+      		<scope>test</scope>
+    	</dependency>
 	</dependencies>
 	<description>jfruit core package</description>
 	<parent>
@@ -45,7 +51,7 @@
 	</parent>
 	<version>0.0.1-SNAPSHOT</version>
 	
-	  <build>
+  <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

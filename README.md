@@ -17,7 +17,9 @@ Logging:		Log4j logging, Configuration is available from
 WebUI Automation:	BaseTestCaseUi provides WebDriver hook which tests extend to enable WebUi verification 
 
 
-TODO:
+TODO:			Add test cases to verify to core to verify functionality
+			Build with sonar/EclEmma-jCoCo 
 
-
-BACLOG:
+BACKLOG:		Add docker client to manage containers. 
+	
+	  
