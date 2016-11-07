@@ -1,7 +1,0 @@
-2015-08-11 08:06:13,060 INFO c.j.c.b.BaseTestCase [main] Before suite
-2015-08-11 08:06:13,113 INFO c.j.c.c.CoreConfigUtil [main] ================================
-2015-08-11 08:06:13,114 INFO c.j.c.c.CoreConfigUtil [main] Loading Configuration Properties
-2015-08-11 08:06:13,115 INFO c.j.c.c.CoreConfigUtil [main] Storing: browser: firefox
-2015-08-11 08:06:13,116 INFO c.j.c.c.CoreConfigUtil [main] Storing: user: sryan
-2015-08-11 08:06:13,117 INFO c.j.c.c.CoreConfigUtil [main] ================================
-2015-08-11 08:06:13,175 INFO c.j.c.c.CoreConfigUtil [main] Getting :browser: firefox

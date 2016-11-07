@@ -1,4 +1,4 @@
-package com.jfruit.ui;
+package com.jfruit.core.ui;
 
 
 import java.io.IOException;

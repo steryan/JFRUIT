@@ -1,0 +1,14 @@
+2016-11-07 17:39:40,467 INFO c.j.c.b.BaseTestCase [main] Before suite
+2016-11-07 17:39:40,468 INFO c.j.c.c.CoreConfigUtil [main] ================================
+2016-11-07 17:39:40,469 INFO c.j.c.c.CoreConfigUtil [main] Loading Configuration Properties
+2016-11-07 17:39:40,470 INFO c.j.c.c.CoreConfigUtil [main] Storing: browser: firefox
+2016-11-07 17:39:40,470 INFO c.j.c.c.CoreConfigUtil [main] Storing: sshuser: jfruit
+2016-11-07 17:39:40,470 INFO c.j.c.c.CoreConfigUtil [main] Storing: sshpass: jfruit
+2016-11-07 17:39:40,470 INFO c.j.c.c.CoreConfigUtil [main] Storing: sshhost: localhost
+2016-11-07 17:39:40,470 INFO c.j.c.c.CoreConfigUtil [main] ================================
+2016-11-07 17:39:40,471 INFO c.j.c.u.BaseTestCaseUi [main] Before UI Suite
+2016-11-07 17:39:40,471 INFO c.j.c.c.CoreConfigUtil [main] Getting :browser: firefox
+2016-11-07 17:39:49,253 INFO c.j.c.t.CoreTestCase [main] Starting searchGoogle test
+2016-11-07 17:39:49,257 INFO c.j.a.u.GooglePOModel [main] Loading page: http://www.google.com
+2016-11-07 17:40:06,952 INFO c.j.c.t.CoreTestCase [main] End searchGoogle test
+2016-11-07 17:40:07,014 INFO c.j.c.u.BaseTestCaseUi [main] After UI Suite

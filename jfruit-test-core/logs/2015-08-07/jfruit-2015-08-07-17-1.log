@@ -1,8 +1,0 @@
-2015-06-30 08:34:32,208 INFO c.j.c.b.BaseTestCase [main] Before suite
-2015-06-30 08:34:32,240 INFO c.j.c.c.CoreConfigUtil [main] ================================
-2015-06-30 08:34:32,241 INFO c.j.c.c.CoreConfigUtil [main] Loading Configuration Properties
-2015-06-30 08:34:32,242 INFO c.j.c.c.CoreConfigUtil [main] Storing: browser: firefox
-2015-06-30 08:34:32,243 INFO c.j.c.c.CoreConfigUtil [main] Storing: user: sryan
-2015-06-30 08:34:32,244 INFO c.j.c.c.CoreConfigUtil [main] ================================
-2015-06-30 08:34:32,318 INFO c.j.c.t.CoreTestCase [main] Entering passing logging test
-2015-06-30 08:34:32,392 INFO c.j.c.b.BaseTestCase [main] After suite

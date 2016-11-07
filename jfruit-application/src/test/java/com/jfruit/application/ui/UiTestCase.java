@@ -4,9 +4,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
-import com.jfruit.application.ui.GooglePOModel;
 import com.jfruit.core.test.CoreTestCase;
-import com.jfruit.ui.BaseTestCaseUi;
+import com.jfruit.core.ui.BaseTestCaseUi;
 
 /**
  * Exercise Google search functionality

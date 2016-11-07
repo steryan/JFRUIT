@@ -1,3 +1,0 @@
-2015-06-11 08:00:24,976 INFO b.BaseTestCase [main] Before suite:
-2015-06-11 08:00:25,001 INFO c.CoreConfig [main] Loading Configuration Properties -
-2015-06-11 08:00:25,002 INFO c.CoreConfig [main] browser: firefox

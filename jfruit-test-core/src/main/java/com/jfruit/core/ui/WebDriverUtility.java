@@ -1,4 +1,5 @@
-package com.jfruit.ui;
+package com.jfruit.core.ui;
+
 
 
 import org.openqa.selenium.WebDriver;
@@ -9,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WebDriverUtility  {
 
-	/* Return a Webdriver instance based on the browser 
+	/* Return a WebDriver instance based on the browser 
 	 *
 	 */
 	public static WebDriver getDriver (String browser){

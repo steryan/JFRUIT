@@ -1,7 +1,0 @@
-2015-06-08 08:30:14,031 INFO b.BaseTestCase [main] Before suite:
-2015-06-08 08:30:14,107 INFO l.BaseTestLogger [main] START SUITE
-2015-06-08 08:30:14,166 INFO l.BaseTestLogger [main] TEST START[TestResult name=loggingTestFail status=STARTED method=CoreTestCase.loggingTestFail()[pri:0, instance:coretest.CoreTestCase@152aa10] output={null}]
-2015-06-08 08:30:14,170 WARN l.BaseTestLogger [main] TEST SKIPPED[TestResult name=loggingTestFail status=SKIP method=CoreTestCase.loggingTestFail()[pri:0, instance:coretest.CoreTestCase@152aa10] output={null}]
-2015-06-08 08:30:14,177 INFO l.BaseTestLogger [main] TEST START[TestResult name=loggingTestPass status=STARTED method=CoreTestCase.loggingTestPass()[pri:0, instance:coretest.CoreTestCase@152aa10] output={null}]
-2015-06-08 08:30:14,183 WARN l.BaseTestLogger [main] TEST SKIPPED[TestResult name=loggingTestPass status=SKIP method=CoreTestCase.loggingTestPass()[pri:0, instance:coretest.CoreTestCase@152aa10] output={null}]
-2015-06-08 08:30:14,278 INFO l.BaseTestLogger [main] FINISH SUITE

@@ -8,7 +8,7 @@ IMPLEMENTED:
 External Configuration: Properties can be passed into the framework through 
 			jfruit-test-core/src/main/config/jfruit-config.properties
 			
-			Properties can be accessed through the framework through the enum 
+Properties can be accessed through the framework through the enum 
 			jfruit-test-core/src/main/java/com/jfruit/core/config/CoreConfigEnums.java
 
 Logging:		Log4j logging, Configuration is available from 
@@ -17,9 +17,18 @@ Logging:		Log4j logging, Configuration is available from
 WebUI Automation:	BaseTestCaseUi provides WebDriver hook which tests extend to enable WebUi verification 
 
 
-TODO:			Add test cases to verify to core to verify functionality
-			Build with sonar/EclEmma-jCoCo 
+TODO:			
 
-BACKLOG:		Add docker client to manage containers. 
+	1.Move UI functionality into Core
+
+	2.Add test cases to verify to core to verify functionality
+			
+	3.Build with sonar/EclEmma-jCoCo 
+
+
+
+
+BACKLOG:		
+	Add docker client to manage containers. 
 	
 	  

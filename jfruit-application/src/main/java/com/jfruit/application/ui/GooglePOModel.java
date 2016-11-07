@@ -6,8 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import com.jfruit.ui.BaseTestCaseUi;
-import com.jfruit.ui.WebDriverUtility;
+import com.jfruit.core.ui.BaseTestCaseUi;
+import com.jfruit.core.ui.WebDriverUtility;
 
 /**
  * Page Object Model for Google Home 
