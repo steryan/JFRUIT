@@ -19,11 +19,11 @@ WebUI Automation:	BaseTestCaseUi provides WebDriver hook which tests extend to e
 
 TODO:			
 
-	1.Move UI functionality into Core
-
-	2.Add test cases to verify to core to verify functionality
+	1.Add test cases to verify to core to verify functionality
 			
-	3.Build with sonar/EclEmma-jCoCo 
+	2.Build with sonar/EclEmma-jCoCo
+
+	3.Add TestNG suites to execute tests
 
 
 
