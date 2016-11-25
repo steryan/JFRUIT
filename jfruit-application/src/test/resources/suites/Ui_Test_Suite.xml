@@ -2,7 +2,7 @@
 <suite name="Component Tests" verbose="2" annotations="JDK">
 	<test name="ui test suite" preserve-order="true">
 		<classes>
-			<class name="com.jfruit.application.ui.UiTestCase" />
+			<class name="com.jfruit.application.ui.UiTestCase"/>
 		</classes>
 	</test>
 </suite>

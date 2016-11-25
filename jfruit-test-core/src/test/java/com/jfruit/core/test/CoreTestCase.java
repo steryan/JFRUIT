@@ -10,6 +10,7 @@ import com.jfruit.core.config.CoreConfigEnums;
 
 /**
  * Test Configuration and logging implementation
+ * 
  * @author stepryan
  *
  */
@@ -23,8 +24,8 @@ public class CoreTestCase extends BaseTestCase {
 	public void loadConfigurationTest() {
 		logger.info("Entering passing logging test");
 
-		String browser  = BaseTestCase.getPropertyValue(CoreConfigEnums.BROWSER);
-		
+		String browser = BaseTestCase.getPropertyValue(CoreConfigEnums.BROWSER);
+
 		logger.info("Using Browser: " + browser);
 
 		Assert.assertTrue(true);

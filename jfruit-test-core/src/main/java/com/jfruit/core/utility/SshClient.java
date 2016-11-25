@@ -17,8 +17,7 @@ import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;
 import com.jfruit.core.basetest.BaseTestCase;
 
-public class SshClient
-{
+public class SshClient {
 	static Logger logger = LogManager.getLogger(BaseTestCase.class.getName());
 	private JSch jschSSHChannel;
 	private String strUserName;
@@ -29,23 +28,20 @@ public class SshClient
 	private int intTimeOut;
 
 	/**
-	 * Create JSch instance 
+	 * Create JSch instance
+	 * 
 	 * @param userName
 	 * @param password
 	 * @param connectionIP
 	 * @param knownHostsFileName
 	 */
-	private void doCommonConstructorActions(String userName, 
-			String password, String connectionIP, String knownHostsFileName)
-	{
+	private void doCommonConstructorActions(String userName, String password, String connectionIP,
+			String knownHostsFileName) {
 		jschSSHChannel = new JSch();
 
-		try
-		{
+		try {
 			jschSSHChannel.setKnownHosts(knownHostsFileName);
-		}
-		catch(JSchException jschX)
-		{
+		} catch (JSchException jschX) {
 			logError(jschX.getMessage());
 		}
 
@@ -55,33 +51,30 @@ public class SshClient
 	}
 
 	/**
-	 *  Connect to remote host on default port
+	 * Connect to remote host on default port
+	 * 
 	 * @param userName
 	 * @param password
 	 * @param connectionIP
 	 * @param knownHostsFileName
 	 */
-	public SshClient(String userName, String password, 
-			String connectionIP, String knownHostsFileName)
-	{
-		doCommonConstructorActions(userName, password, 
-				connectionIP, knownHostsFileName);
+	public SshClient(String userName, String password, String connectionIP, String knownHostsFileName) {
+		doCommonConstructorActions(userName, password, connectionIP, knownHostsFileName);
 		intConnectionPort = 22;
 		intTimeOut = 60000;
 	}
 
 	// Connect to a remote host on a given port
-	public SshClient(String userName, String password, String connectionIP, 
-			String knownHostsFileName, int connectionPort)
-	{
-		doCommonConstructorActions(userName, password, connectionIP, 
-				knownHostsFileName);
+	public SshClient(String userName, String password, String connectionIP, String knownHostsFileName,
+			int connectionPort) {
+		doCommonConstructorActions(userName, password, connectionIP, knownHostsFileName);
 		intConnectionPort = connectionPort;
 		intTimeOut = 60000;
 	}
 
 	/**
 	 * Connect to a remote host on a given port with timeout
+	 * 
 	 * @param userName
 	 * @param password
 	 * @param connectionIP
@@ -89,83 +82,69 @@ public class SshClient
 	 * @param connectionPort
 	 * @param timeOutMilliseconds
 	 */
-	public SshClient(String userName, String password, String connectionIP, 
-			String knownHostsFileName, int connectionPort, int timeOutMilliseconds)
-	{
-		doCommonConstructorActions(userName, password, connectionIP, 
-				knownHostsFileName);
+	public SshClient(String userName, String password, String connectionIP, String knownHostsFileName,
+			int connectionPort, int timeOutMilliseconds) {
+		doCommonConstructorActions(userName, password, connectionIP, knownHostsFileName);
 		intConnectionPort = connectionPort;
 		intTimeOut = timeOutMilliseconds;
 	}
 
 	/**
-	 *  Establish ssh connection
+	 * Establish ssh connection
+	 * 
 	 * @return error or null
 	 */
-	public String connect()
-	{
+	public String connect() {
 		String errorMessage = null;
 
-		try
-		{
-			sesConnection = jschSSHChannel.getSession(strUserName, 
-					strConnectionIP, intConnectionPort);
+		try {
+			sesConnection = jschSSHChannel.getSession(strUserName, strConnectionIP, intConnectionPort);
 			sesConnection.setPassword(strPassword);
 			// UNCOMMENT THIS FOR TESTING PURPOSES, BUT DO NOT USE IN PRODUCTION
 			sesConnection.setConfig("StrictHostKeyChecking", "no");
 			sesConnection.connect(intTimeOut);
-		}
-		catch(JSchException jschX)
-		{
+		} catch (JSchException jschX) {
 			errorMessage = jschX.getMessage();
 		}
 
 		return errorMessage;
 	}
 
-	private void logError(String errorMessage)
-	{
+	private void logError(String errorMessage) {
 
 		logger.error(errorMessage);
 	}
 
-	private void logWarning(String warnMessage)
-	{     
+	private void logWarning(String warnMessage) {
 		logger.warn(warnMessage);
 	}
 
 	/**
-	 *  Send a command via the SSH connection and return the output
+	 * Send a command via the SSH connection and return the output
+	 * 
 	 * @param command
 	 * @return command output
 	 */
-	public String sendCommand(String command)
-	{
+	public String sendCommand(String command) {
 		StringBuilder outputBuffer = new StringBuilder();
 
-		try
-		{
+		try {
 			Channel channel = sesConnection.openChannel("exec");
-			((ChannelExec)channel).setCommand(command);
+			((ChannelExec) channel).setCommand(command);
 			InputStream commandOutput = channel.getInputStream();
 			channel.connect();
 			int readByte = commandOutput.read();
 
-			while(readByte != 0xffffffff)
-			{
-				outputBuffer.append((char)readByte);
+			while (readByte != 0xffffffff) {
+				outputBuffer.append((char) readByte);
 				readByte = commandOutput.read();
 			}
 
 			channel.disconnect();
-		}
-		catch(IOException ioX)
-		{
+		} catch (IOException ioX) {
 			logWarning(ioX.getMessage());
 			return null;
-		}
-		catch(JSchException jschX)
-		{
+		} catch (JSchException jschX) {
 			logWarning(jschX.getMessage());
 			return null;
 		}
@@ -176,8 +155,7 @@ public class SshClient
 	/**
 	 * Close the ssh session
 	 */
-	public void close()
-	{
+	public void close() {
 		sesConnection.disconnect();
 	}
 

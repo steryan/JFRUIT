@@ -10,6 +10,7 @@
 	<modules>
 		<module>../jfruit-test-core</module>
 		<module>../jfruit-application</module>
+
 		
 	</modules>
 	

@@ -7,7 +7,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 /**
- * TestLogger to log to test execution status 
+ * TestLogger to log to test execution status
  */
 public class BaseTestLogger implements ITestListener {
 

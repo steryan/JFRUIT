@@ -29,6 +29,11 @@ TODO:
 
 
 BACKLOG:		
-	Add docker client to manage containers. 
+	1.Add docker client to manage containers. 
+
+Defects:
+	jfruit-ui error in jfruit-core eclipse project.
+	Update Maven removes errors
+
 	
 	  
