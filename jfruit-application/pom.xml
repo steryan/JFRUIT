@@ -65,7 +65,9 @@
 				<version>2.19.1</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/suites/Ui_Test_Suite.xml</suiteXmlFile>
+						<!--  suiteXmlFile>src/test/resources/suites/Ui_Test_Suite.xml</suiteXmlFile-->
+						<suiteXmlFile>${testNgSuite}</suiteXmlFile>
+
 					</suiteXmlFiles>
 					<systemPropertyVariables>
 						<propertyName>${project.properties}</propertyName>
