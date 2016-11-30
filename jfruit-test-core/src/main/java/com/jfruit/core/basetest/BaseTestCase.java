@@ -6,6 +6,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.jfruit.core.config.CoreConfigEnums;
@@ -20,7 +22,7 @@ import com.jfruit.core.config.CoreConfigUtil;
 @Test
 public class BaseTestCase {
 
-	String coreConfigPropertiesFile = "jfruit-config.properties";
+	//String coreConfigPropertiesFile = "jfruit-config.properties";
 
 	static CoreConfigUtil coreConfig = new CoreConfigUtil();
 
@@ -32,13 +34,17 @@ public class BaseTestCase {
 	 * 
 	 * @throws IOException
 	 */
+	@Parameters({"config"})
 	@BeforeSuite
-	public void beforeSuite() throws IOException {
+	public void beforeSuite(@Optional("jfruit-config.properties") String config) throws IOException {
 		logger.info("Before suite");
 
+		logger.debug("Working Directory = " +
+	               System.getProperty("user.dir"));
+		
 		// Read the configuration file and load the configuration properties
-		// CoreConfigUtil coreConfig = new CoreConfigUtil();
-		coreConfig.loadPropValues(coreConfigPropertiesFile);
+	    logger.info("Loading Configuration Properties File: " + config);
+		coreConfig.loadPropValues(config);
 
 	}
 

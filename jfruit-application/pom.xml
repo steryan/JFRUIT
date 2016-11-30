@@ -67,14 +67,9 @@
 					<suiteXmlFiles>
 						<!--  suiteXmlFile>src/test/resources/suites/Ui_Test_Suite.xml</suiteXmlFile-->
 						<suiteXmlFile>${testNgSuite}</suiteXmlFile>
-
 					</suiteXmlFiles>
-					<systemPropertyVariables>
-						<propertyName>${project.properties}</propertyName>
-					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
