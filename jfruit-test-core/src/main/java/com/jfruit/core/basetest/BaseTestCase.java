@@ -39,7 +39,7 @@ public class BaseTestCase {
 	public void beforeSuite(@Optional("jfruit-config.properties") String config) throws IOException {
 		logger.info("Before suite");
 
-		logger.debug("Working Directory = " +
+		logger.info("Working Directory = " +
 	               System.getProperty("user.dir"));
 		
 		// Read the configuration file and load the configuration properties

@@ -3,6 +3,10 @@ Java Feature Regression User Iterative Testing Framework
 
 Based on Java - TestNG and Maven. This is a feature regression framework for automating UI and core features.
 
+RUNNING:
+mvn install
+mvn test -DargLine="-Dconfig=Ui_Test.properties"
+
 IMPLEMENTED:
 
 External Configuration: Properties can be passed into the framework through 
@@ -23,7 +27,6 @@ TODO:
 			
 	2.Build with sonar/EclEmma-jCoCo
 
-	3.Add TestNG suites to execute tests
 
 
 
@@ -32,8 +35,7 @@ BACKLOG:
 	1.Add docker client to manage containers. 
 
 Defects:
-	jfruit-ui error in jfruit-core eclipse project.
-	Update Maven removes errors
+
 
 	
 	  

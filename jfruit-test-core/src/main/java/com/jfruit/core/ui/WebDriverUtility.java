@@ -15,7 +15,7 @@ public class WebDriverUtility {
 	public static WebDriver getDriver(String browser) {
 
 		// WebDriver driver;
-		if (browser == "chrome") {
+		if (browser.equalsIgnoreCase("chrome")) {
 			return new ChromeDriver();
 		}
 
