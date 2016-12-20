@@ -4,8 +4,17 @@ Java Feature Regression User Iterative Testing Framework
 Based on Java - TestNG and Maven. This is a feature regression framework for automating UI and core features.
 
 RUNNING:
+When running with maven pass the Environment variable testNgSuite containing the suite name
+e.g.
+testNgSuite=src/test/resources/suites/Ui_Test_Suite.xml
+
 mvn install
-mvn test -DargLine="-Dconfig=Ui_Test.properties"
+
+mvn test -DargLine="-Dconfig=Ui_Test.properties"jar
+
+
+When running from TestNG under eclipse specify the properties file in the VM Arguments
+VM arguments: -Dconfig=Ui_Test.properties
 
 IMPLEMENTED:
 
@@ -19,6 +28,8 @@ Logging:		Log4j logging, Configuration is available from
 			jfruit-test-core/src/main/config/log4j2.xml
 		
 WebUI Automation:	BaseTestCaseUi provides WebDriver hook which tests extend to enable WebUi verification 
+
+Docker Client: 		Docker Client Integration
 
 
 TODO:			
