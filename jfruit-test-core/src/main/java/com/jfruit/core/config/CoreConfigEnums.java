@@ -15,6 +15,13 @@ public enum CoreConfigEnums {
 			return "browser";
 		}
 	},
+	// Browser used to run UI tests
+	CHROMEDRIVERLOCATION {
+		@Override
+		public String toString() {
+			return "webdriverlocation";
+		}
+	},
 	// User for SSH login
 	SSHUSER {
 		@Override

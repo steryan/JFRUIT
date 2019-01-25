@@ -6,6 +6,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.jfruit.core.basetest.BaseTestCase;
+import com.jfruit.core.config.CoreConfigEnums;
+
 public class WebDriverUtility {
 
 	/*
@@ -16,6 +19,8 @@ public class WebDriverUtility {
 
 		// WebDriver driver;
 		if (browser.equalsIgnoreCase("chrome")) {
+			//System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",BaseTestCase.getPropertyValue(CoreConfigEnums.CHROMEDRIVERLOCATION));
 			return new ChromeDriver();
 		}
 
