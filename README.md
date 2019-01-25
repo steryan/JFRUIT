@@ -28,6 +28,8 @@ Logging:		Log4j logging, Configuration is available from
 			jfruit-test-core/src/main/config/log4j2.xml
 		
 WebUI Automation:	BaseTestCaseUi provides WebDriver hook which tests extend to enable WebUi verification 
+			When using Chrome browser, chromedriver.exe is required http://chromedriver.chromium.org/downloads
+			Set webdriverlocationn in jfruit-test-core/src/main/config/jfruit-config.properties
 
 Docker Client: 		Docker Client Integration
 
