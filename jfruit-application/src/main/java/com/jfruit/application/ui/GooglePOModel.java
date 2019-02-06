@@ -22,7 +22,7 @@ public class GooglePOModel extends BaseTestCaseUi {
 
 	// Page identifiers
 	private String url = "http://www.google.com";
-	private String title = "Google";
+	//private String title = "Google";
 	private String inputBoxIdentifier = "q";
 
 	// Page method for loding page

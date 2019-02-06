@@ -7,7 +7,9 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.jfruit.core.utility.DockerClient;
+import com.jfruit.core.utility.DockerSpotifyClient;
+import com.spotify.docker.client.DefaultDockerClient;
+import com.spotify.docker.client.exceptions.DockerCertificateException;
 import com.spotify.docker.client.exceptions.DockerException;
 import com.spotify.docker.client.messages.Image;
 
@@ -20,23 +22,26 @@ public class DockerClientTestCase {
 	 * Test docker pull and docker list api calls
 	 * @throws InterruptedException 
 	 * @throws DockerException 
+	 * @throws DockerCertificateException 
 	 */
 	@Test
-	public void testDockerCommands() throws DockerException, InterruptedException {
+	public void testDockerCommands() throws DockerException, InterruptedException, DockerCertificateException {
 		
 		logger.info("Start Test: DockerClientTestCase.testDockerCommands");
-		DockerClient dc = new DockerClient();
-						
+		
+		DefaultDockerClient dc = DockerSpotifyClient.connect();
+
+					
 		String imageName = "busybox";;
 		String tag = "latest";
 				
 	    String imageTags = imageName + ":" + tag;				
 		
 	    // Pull the image 
-		dc.pullImage(imageName, tag);
+	    DockerSpotifyClient.pullImage(dc, imageName, tag);
 		
 		// Retrieve images from repository
-		List<Image> images = dc.getImages();
+		List<Image> images = DockerSpotifyClient.getImages(dc);
 		
 		//Image image;
 		boolean found = false;

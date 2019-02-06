@@ -6,6 +6,7 @@ import org.testng.annotations.*;
 
 //import com.jfruit.core.test.CoreTestCase;
 import com.jfruit.core.ui.BaseTestCaseUi;
+import com.jfruit.core.ui.WebDriverUtility;
 
 /**
  * Exercise Google search functionality
@@ -38,7 +39,7 @@ public class UiTestCase extends BaseTestCaseUi {
 		googlePOMOdel.search(driver, searchString);
 
 		// Close the browser
-		webDriverUtility.closeBrowser(driver);
+		WebDriverUtility.closeBrowser(driver);
 
 		logger.info("End searchGoogle test");
 	}
